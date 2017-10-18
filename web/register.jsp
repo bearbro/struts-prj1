@@ -9,7 +9,7 @@
 <%@ taglib prefix="s" uri="/struts-tags" %>
 <%@ taglib prefix="sx" uri="/struts-dojo-tags" %>
 <html>
-<head><title><s:text name="register.label"/></title></head>
+<head><sx:head extraLocales="UTF-8" /><title><s:text name="register.label"/></title></head>
 <body>
 <s:form action="register" method="post">
     <s:textfield name="loginUser.account" key="reg.account.label"/>
@@ -17,7 +17,7 @@
     <s:password name="loginUser.repassword" key="reg.repassword.label"/>
     <s:textfield name="loginUser.name" key="reg.name.label"/>
     <s:radio name="loginUser.sex" list="#{ 1:getText('man'), 0:getText('woman')}" key="reg.sex.label"/>
-    <sx:datetimepicker name="loginUser.birthday" displayFormat="yyyy-mm-dd" key="reg.birthday.label"/>
+    <sx:datetimepicker name="loginUser.birthday"  displayFormat="yyyy-MM-dd" language="UTF-8" key="reg.birthday.label"/>
     <s:textfield name="loginUser.address" key="reg.address.label"/>
     <s:textfield name="loginUser.phone" key="reg.phone.label"/>
     <s:textfield name="loginUser.email" key="reg.email.label"/>
