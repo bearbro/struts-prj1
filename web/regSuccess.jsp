@@ -9,7 +9,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>注册成功</title>
+    <title><s:text name="success.label"/></title>
 </head>
 <body>
 
